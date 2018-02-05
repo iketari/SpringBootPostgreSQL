@@ -19,4 +19,9 @@ public class CityService implements ICityService {
 
         return cities;
     }
+
+    @Override
+    public City create(City city) {
+        return repository.save(city);
+    }
 }
